@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px 8px;
+  grid-template-areas:
+    "btn1 btn2 btn3"
+    "btn4 btn5 btn6"
+    "btn7 btn8 btn9";
+}
+.btn1 { grid-area: btn1; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }
+.btn4 { grid-area: btn4; }
+.btn5 { grid-area: btn5; }
+.btn6 { grid-area: btn6; }
+.btn7 { grid-area: btn7; }
+.btn8 { grid-area: btn8; }
+.btn9 { grid-area: btn9; }
+
+.B {
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	padding:6px 24px;
+	text-shadow:0px 1px 0px #ced9bf;
+	height: 200px;
+    margin: 5%;
+}
+.B:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.B:active {
+	position:relative;
+	top:1px;
+}
+body {
+	background-color: black;
+}
+</style>
+</head>
+<body>
+<main class="grid-container">
+	<button id="1" class="B btn1"></button>
+	<button id="2" class="B btn2"></button>
+	<button id="3" class="B btn3"></button>
+	<button id="4" class="B btn4"></button>
+	<button id="5" class="B btn5"></button>
+	<button id="6" class="B btn6"></button>
+	<button id="7" class="B btn7"></button>
+	<button id="8" class="B btn8"></button>
+	<button id="9" class="B btn9"></button>
+</main>
+<script src="skrypt.js"></script>
+</body>
+</html>
